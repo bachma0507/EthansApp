@@ -22,6 +22,28 @@
 		4C2A25C518E8B3F70055EB1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A25A418E8B3F70055EB1F /* UIKit.framework */; };
 		4C2A25CD18E8B3F70055EB1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C2A25CB18E8B3F70055EB1F /* InfoPlist.strings */; };
 		4C2A25CF18E8B3F70055EB1F /* EthansAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A25CE18E8B3F70055EB1F /* EthansAppTests.m */; };
+		4C2A25D918E8B4160055EB1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A25D818E8B4160055EB1F /* MediaPlayer.framework */; };
+		4C46663618E8C67C00916D72 /* Adding_For_Toddlers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C46663518E8C67C00916D72 /* Adding_For_Toddlers.mp4 */; };
+		4C46663818E8C7F200916D72 /* Toddlers_ Learn_Different_Objects.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C46663718E8C7F200916D72 /* Toddlers_ Learn_Different_Objects.mp4 */; };
+		4C46664618E8FC0300916D72 /* whatsthatsm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664218E8FC0300916D72 /* whatsthatsm.png */; };
+		4C46664718E8FC0300916D72 /* whatsthatsm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664318E8FC0300916D72 /* whatsthatsm@2x.png */; };
+		4C46664818E8FC0300916D72 /* mathsm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664418E8FC0300916D72 /* mathsm.png */; };
+		4C46664918E8FC0300916D72 /* mathsm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664518E8FC0300916D72 /* mathsm@2x.png */; };
+		4C46664B18E904F600916D72 /* Learning_Animals.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664A18E904F600916D72 /* Learning_Animals.mp4 */; };
+		4C46664E18E9062300916D72 /* learninganimalssm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664C18E9062300916D72 /* learninganimalssm.png */; };
+		4C46664F18E9062300916D72 /* learninganimalssm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46664D18E9062300916D72 /* learninganimalssm@2x.png */; };
+		4C46665118E9099C00916D72 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C46665018E9099C00916D72 /* AudioToolbox.framework */; };
+		4C46665318E917AF00916D72 /* launch640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46665218E917AF00916D72 /* launch640x960.png */; };
+		4C46665518E91E3B00916D72 /* Count_to_20.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C46665418E91E3B00916D72 /* Count_to_20.mp4 */; };
+		4C46665818E91F2500916D72 /* countto20sm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46665618E91F2500916D72 /* countto20sm.png */; };
+		4C46665918E91F2500916D72 /* countto20sm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46665718E91F2500916D72 /* countto20sm@2x.png */; };
+		4C6456E718F0960B0011D002 /* colorsspacesm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456E318F0960B0011D002 /* colorsspacesm.png */; };
+		4C6456E818F0960B0011D002 /* colorsspacesm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456E418F0960B0011D002 /* colorsspacesm@2x.png */; };
+		4C6456E918F0960B0011D002 /* colorspeggysm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456E518F0960B0011D002 /* colorspeggysm.png */; };
+		4C6456EA18F0960B0011D002 /* colorspeggysm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456E618F0960B0011D002 /* colorspeggysm@2x.png */; };
+		4C6456ED18F096310011D002 /* Learning_Colors_flying_spaceships.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456EB18F096310011D002 /* Learning_Colors_flying_spaceships.mp4 */; };
+		4C6456EE18F096310011D002 /* Learning_Colors_Peggy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C6456EC18F096310011D002 /* Learning_Colors_Peggy.mp4 */; };
+		4CDB8BC218EA451B00B6D969 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB8BC118EA451B00B6D969 /* ReflectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +77,29 @@
 		4C2A25CA18E8B3F70055EB1F /* EthansAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EthansAppTests-Info.plist"; sourceTree = "<group>"; };
 		4C2A25CC18E8B3F70055EB1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C2A25CE18E8B3F70055EB1F /* EthansAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthansAppTests.m; sourceTree = "<group>"; };
+		4C2A25D818E8B4160055EB1F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4C46663518E8C67C00916D72 /* Adding_For_Toddlers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Adding_For_Toddlers.mp4; sourceTree = "<group>"; };
+		4C46663718E8C7F200916D72 /* Toddlers_ Learn_Different_Objects.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Toddlers_ Learn_Different_Objects.mp4"; sourceTree = "<group>"; };
+		4C46664218E8FC0300916D72 /* whatsthatsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsthatsm.png; sourceTree = "<group>"; };
+		4C46664318E8FC0300916D72 /* whatsthatsm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whatsthatsm@2x.png"; sourceTree = "<group>"; };
+		4C46664418E8FC0300916D72 /* mathsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mathsm.png; sourceTree = "<group>"; };
+		4C46664518E8FC0300916D72 /* mathsm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mathsm@2x.png"; sourceTree = "<group>"; };
+		4C46664A18E904F600916D72 /* Learning_Animals.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Learning_Animals.mp4; sourceTree = "<group>"; };
+		4C46664C18E9062300916D72 /* learninganimalssm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learninganimalssm.png; sourceTree = "<group>"; };
+		4C46664D18E9062300916D72 /* learninganimalssm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "learninganimalssm@2x.png"; sourceTree = "<group>"; };
+		4C46665018E9099C00916D72 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4C46665218E917AF00916D72 /* launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch640x960.png; sourceTree = "<group>"; };
+		4C46665418E91E3B00916D72 /* Count_to_20.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Count_to_20.mp4; sourceTree = "<group>"; };
+		4C46665618E91F2500916D72 /* countto20sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countto20sm.png; sourceTree = "<group>"; };
+		4C46665718E91F2500916D72 /* countto20sm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countto20sm@2x.png"; sourceTree = "<group>"; };
+		4C6456E318F0960B0011D002 /* colorsspacesm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorsspacesm.png; sourceTree = "<group>"; };
+		4C6456E418F0960B0011D002 /* colorsspacesm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorsspacesm@2x.png"; sourceTree = "<group>"; };
+		4C6456E518F0960B0011D002 /* colorspeggysm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorspeggysm.png; sourceTree = "<group>"; };
+		4C6456E618F0960B0011D002 /* colorspeggysm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorspeggysm@2x.png"; sourceTree = "<group>"; };
+		4C6456EB18F096310011D002 /* Learning_Colors_flying_spaceships.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Learning_Colors_flying_spaceships.mp4; sourceTree = "<group>"; };
+		4C6456EC18F096310011D002 /* Learning_Colors_Peggy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Learning_Colors_Peggy.mp4; sourceTree = "<group>"; };
+		4CDB8BC018EA451B00B6D969 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		4CDB8BC118EA451B00B6D969 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C46665118E9099C00916D72 /* AudioToolbox.framework in Frameworks */,
+				4C2A25D918E8B4160055EB1F /* MediaPlayer.framework in Frameworks */,
 				4C2A25A318E8B3F70055EB1F /* CoreGraphics.framework in Frameworks */,
 				4C2A25A518E8B3F70055EB1F /* UIKit.framework in Frameworks */,
 				4C2A25A118E8B3F70055EB1F /* Foundation.framework in Frameworks */,
@@ -84,6 +131,7 @@
 		4C2A259418E8B3F70055EB1F = {
 			isa = PBXGroup;
 			children = (
+				4CDB8BBF18EA451B00B6D969 /* ReflectionView */,
 				4C2A25A618E8B3F70055EB1F /* EthansApp */,
 				4C2A25C818E8B3F70055EB1F /* EthansAppTests */,
 				4C2A259F18E8B3F70055EB1F /* Frameworks */,
@@ -103,6 +151,8 @@
 		4C2A259F18E8B3F70055EB1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C46665018E9099C00916D72 /* AudioToolbox.framework */,
+				4C2A25D818E8B4160055EB1F /* MediaPlayer.framework */,
 				4C2A25A018E8B3F70055EB1F /* Foundation.framework */,
 				4C2A25A218E8B3F70055EB1F /* CoreGraphics.framework */,
 				4C2A25A418E8B3F70055EB1F /* UIKit.framework */,
@@ -114,6 +164,14 @@
 		4C2A25A618E8B3F70055EB1F /* EthansApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C6456EB18F096310011D002 /* Learning_Colors_flying_spaceships.mp4 */,
+				4C6456EC18F096310011D002 /* Learning_Colors_Peggy.mp4 */,
+				4C46665418E91E3B00916D72 /* Count_to_20.mp4 */,
+				4C46665218E917AF00916D72 /* launch640x960.png */,
+				4C46664A18E904F600916D72 /* Learning_Animals.mp4 */,
+				4C46663918E8CABE00916D72 /* images */,
+				4C46663718E8C7F200916D72 /* Toddlers_ Learn_Different_Objects.mp4 */,
+				4C46663518E8C67C00916D72 /* Adding_For_Toddlers.mp4 */,
 				4C2A25AF18E8B3F70055EB1F /* movieAppDelegate.h */,
 				4C2A25B018E8B3F70055EB1F /* movieAppDelegate.m */,
 				4C2A25B218E8B3F70055EB1F /* Main_iPhone.storyboard */,
@@ -153,6 +211,34 @@
 				4C2A25CB18E8B3F70055EB1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C46663918E8CABE00916D72 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4C6456E318F0960B0011D002 /* colorsspacesm.png */,
+				4C6456E418F0960B0011D002 /* colorsspacesm@2x.png */,
+				4C6456E518F0960B0011D002 /* colorspeggysm.png */,
+				4C6456E618F0960B0011D002 /* colorspeggysm@2x.png */,
+				4C46665618E91F2500916D72 /* countto20sm.png */,
+				4C46665718E91F2500916D72 /* countto20sm@2x.png */,
+				4C46664C18E9062300916D72 /* learninganimalssm.png */,
+				4C46664D18E9062300916D72 /* learninganimalssm@2x.png */,
+				4C46664218E8FC0300916D72 /* whatsthatsm.png */,
+				4C46664318E8FC0300916D72 /* whatsthatsm@2x.png */,
+				4C46664418E8FC0300916D72 /* mathsm.png */,
+				4C46664518E8FC0300916D72 /* mathsm@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		4CDB8BBF18EA451B00B6D969 /* ReflectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB8BC018EA451B00B6D969 /* ReflectionView.h */,
+				4CDB8BC118EA451B00B6D969 /* ReflectionView.m */,
+			);
+			path = ReflectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +289,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Barry Julien";
 				TargetAttributes = {
+					4C2A259C18E8B3F70055EB1F = {
+						DevelopmentTeam = 2RTXJRE3QU;
+					};
 					4C2A25C018E8B3F70055EB1F = {
 						TestTargetID = 4C2A259C18E8B3F70055EB1F;
 					};
@@ -232,10 +321,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C46665818E91F2500916D72 /* countto20sm.png in Resources */,
+				4C6456ED18F096310011D002 /* Learning_Colors_flying_spaceships.mp4 in Resources */,
 				4C2A25B718E8B3F70055EB1F /* Main_iPad.storyboard in Resources */,
+				4C46664E18E9062300916D72 /* learninganimalssm.png in Resources */,
+				4C6456EA18F0960B0011D002 /* colorspeggysm@2x.png in Resources */,
+				4C46663818E8C7F200916D72 /* Toddlers_ Learn_Different_Objects.mp4 in Resources */,
+				4C46664918E8FC0300916D72 /* mathsm@2x.png in Resources */,
+				4C46664818E8FC0300916D72 /* mathsm.png in Resources */,
+				4C6456E918F0960B0011D002 /* colorspeggysm.png in Resources */,
+				4C46665518E91E3B00916D72 /* Count_to_20.mp4 in Resources */,
 				4C2A25BC18E8B3F70055EB1F /* Images.xcassets in Resources */,
+				4C6456E818F0960B0011D002 /* colorsspacesm@2x.png in Resources */,
 				4C2A25B418E8B3F70055EB1F /* Main_iPhone.storyboard in Resources */,
+				4C6456EE18F096310011D002 /* Learning_Colors_Peggy.mp4 in Resources */,
+				4C46664618E8FC0300916D72 /* whatsthatsm.png in Resources */,
+				4C6456E718F0960B0011D002 /* colorsspacesm.png in Resources */,
+				4C46663618E8C67C00916D72 /* Adding_For_Toddlers.mp4 in Resources */,
 				4C2A25AB18E8B3F70055EB1F /* InfoPlist.strings in Resources */,
+				4C46664B18E904F600916D72 /* Learning_Animals.mp4 in Resources */,
+				4C46665918E91F2500916D72 /* countto20sm@2x.png in Resources */,
+				4C46664718E8FC0300916D72 /* whatsthatsm@2x.png in Resources */,
+				4C46665318E917AF00916D72 /* launch640x960.png in Resources */,
+				4C46664F18E9062300916D72 /* learninganimalssm@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2A25AD18E8B3F70055EB1F /* main.m in Sources */,
+				4CDB8BC218EA451B00B6D969 /* ReflectionView.m in Sources */,
 				4C2A25BA18E8B3F70055EB1F /* movieViewController.m in Sources */,
 				4C2A25B118E8B3F70055EB1F /* movieAppDelegate.m in Sources */,
 			);
@@ -391,10 +500,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EthansApp/EthansApp-Prefix.pch";
 				INFOPLIST_FILE = "EthansApp/EthansApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +516,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EthansApp/EthansApp-Prefix.pch";
 				INFOPLIST_FILE = "EthansApp/EthansApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +586,7 @@
 				4C2A25D418E8B3F70055EB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2A25D518E8B3F70055EB1F /* Build configuration list for PBXNativeTarget "EthansAppTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +595,7 @@
 				4C2A25D718E8B3F70055EB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

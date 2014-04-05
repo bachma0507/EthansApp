@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface movieAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UIImageView *splashView;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

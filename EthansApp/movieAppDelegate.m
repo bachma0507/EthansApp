@@ -7,12 +7,61 @@
 //
 
 #import "movieAppDelegate.h"
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @implementation movieAppDelegate
+@synthesize window;
+
+- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+    [splashView removeFromSuperview];
+    
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSURL *fileURL = [NSURL URLWithString:@"/System/Library/Audio/UISounds/New/Choo_Choo.caf"]; // see list below
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((__bridge_retained CFURLRef)fileURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    [window makeKeyAndVisible];
+    
+    splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,window.frame.size.width,window.frame.size.height)];
+    splashView.image = [UIImage imageNamed:@"launch640x960"];
+    [window addSubview:splashView];
+    [window bringSubviewToFront:splashView];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:5.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:window cache:YES];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
+    splashView.alpha = 0.0;
+    [UIView commitAnimations];
+    
+    //set an anchor point on the image view so it opens from the left
+    //splashView.layer.anchorPoint = CGPointMake(0, 0.5);
+    
+    //reset the image view frame
+    //splashView.frame = CGRectMake(0,0,window.frame.size.width,window.frame.size.height);
+    
+    //animate the open
+//    [UIView animateWithDuration:1.0
+//                          delay:0.6
+//                        //options:(UIViewAnimationCurveEaseOut)
+//                    options:(UIViewAnimationOptionCurveEaseOut)
+//                     animations:^{
+//                         
+//                         splashView.layer.transform = CATransform3DRotate(CATransform3DIdentity, -M_PI_2, 0, 1, 0);
+//                     } completion:^(BOOL finished){
+//                         
+//                         //remove that imageview from the view
+//                         [splashView removeFromSuperview];
+//                     }];
+    
     return YES;
 }
 							
