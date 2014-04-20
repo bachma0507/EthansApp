@@ -15,7 +15,7 @@
 
 @implementation movieViewController
 @synthesize moviePlayer;
-@synthesize reflectionView, reflectionView4, reflectionView2, reflectionView3, reflectionView5, reflectionView6;
+@synthesize reflectionView, reflectionView4, reflectionView2, reflectionView3, reflectionView5, reflectionView6, reflectionView7;
 
 - (void)viewDidLoad
 {
@@ -44,6 +44,10 @@
     reflectionView6.dynamic = NO;
     reflectionView6.reflectionGap = 4;
     reflectionView6.reflectionAlpha = 0.5;
+    
+    reflectionView7.dynamic = NO;
+    reflectionView7.reflectionGap = 4;
+    reflectionView7.reflectionAlpha = 0.5;
 }
 
 - (void)didReceiveMemoryWarning
@@ -283,6 +287,50 @@
     AudioServicesPlaySystemSound(soundID);
     
     NSString *videoFile = [[NSBundle mainBundle] pathForResource:@"Learning_Colors_flying_spaceships" ofType:@"mp4"];
+    
+    //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+    //pathForResource:@"Adding_For_Toddlers" ofType:@"MP4"]];
+    
+    if (videoFile) {
+        NSURL *url = [NSURL fileURLWithPath:videoFile];
+        NSError *error;
+        
+        moviePlayer =  [[MPMoviePlayerController alloc]
+                        initWithContentURL:url];
+        
+        if (!error) {
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self
+                                                     selector:@selector(moviePlayBackDidFinish:)
+                                                         name:MPMoviePlayerPlaybackDidFinishNotification
+                                                       object:moviePlayer];
+            
+            moviePlayer.controlStyle = MPMovieControlStyleDefault;
+            moviePlayer.shouldAutoplay = YES;
+            [self.view addSubview:moviePlayer.view];
+            [moviePlayer setFullscreen:YES animated:YES];
+            
+            [moviePlayer play];
+        }
+    }
+    else {
+        NSError *error;
+        NSLog(@"Error occurred: %@", [error localizedDescription]);
+    }
+    
+    
+    //[moviePlayer play];
+    
+}
+
+-(IBAction) playMovie7:(id)sender
+{
+    NSURL *fileURL = [NSURL URLWithString:@"/System/Library/Audio/UISounds/Tink.caf"]; // see list below
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((__bridge_retained CFURLRef)fileURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    NSString *videoFile = [[NSBundle mainBundle] pathForResource:@"Learning_and_Adding_Fruit" ofType:@"mp4"];
     
     //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
     //pathForResource:@"Adding_For_Toddlers" ofType:@"MP4"]];

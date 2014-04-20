@@ -219,6 +219,7 @@
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];//added by Barry because Autolayout enabled. Will crash if not included with Autolayout.
     [self update];
 }
 
