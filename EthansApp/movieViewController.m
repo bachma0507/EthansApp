@@ -15,7 +15,7 @@
 
 @implementation movieViewController
 @synthesize moviePlayer;
-@synthesize reflectionView, reflectionView4, reflectionView2, reflectionView3, reflectionView5, reflectionView6, reflectionView7;
+@synthesize reflectionView, reflectionView4, reflectionView2, reflectionView3, reflectionView5, reflectionView6, reflectionView7, reflectionView8, reflectionView9;
 
 - (void)viewDidLoad
 {
@@ -48,6 +48,14 @@
     reflectionView7.dynamic = NO;
     reflectionView7.reflectionGap = 4;
     reflectionView7.reflectionAlpha = 0.5;
+    
+    reflectionView8.dynamic = NO;
+    reflectionView8.reflectionGap = 4;
+    reflectionView8.reflectionAlpha = 0.5;
+    
+    reflectionView9.dynamic = NO;
+    reflectionView9.reflectionGap = 4;
+    reflectionView9.reflectionAlpha = 0.5;
 }
 
 - (void)didReceiveMemoryWarning
@@ -367,7 +375,93 @@
     
 }
 
+-(IBAction) playMovie8:(id)sender
+{
+    NSURL *fileURL = [NSURL URLWithString:@"/System/Library/Audio/UISounds/Tink.caf"]; // see list below
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((__bridge_retained CFURLRef)fileURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    NSString *videoFile = [[NSBundle mainBundle] pathForResource:@"The_Letter_A" ofType:@"mp4"];
+    
+    //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+    //pathForResource:@"Adding_For_Toddlers" ofType:@"MP4"]];
+    
+    if (videoFile) {
+        NSURL *url = [NSURL fileURLWithPath:videoFile];
+        NSError *error;
+        
+        moviePlayer =  [[MPMoviePlayerController alloc]
+                        initWithContentURL:url];
+        
+        if (!error) {
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self
+                                                     selector:@selector(moviePlayBackDidFinish:)
+                                                         name:MPMoviePlayerPlaybackDidFinishNotification
+                                                       object:moviePlayer];
+            
+            moviePlayer.controlStyle = MPMovieControlStyleDefault;
+            moviePlayer.shouldAutoplay = YES;
+            [self.view addSubview:moviePlayer.view];
+            [moviePlayer setFullscreen:YES animated:YES];
+            
+            [moviePlayer play];
+        }
+    }
+    else {
+        NSError *error;
+        NSLog(@"Error occurred: %@", [error localizedDescription]);
+    }
+    
+    
+    //[moviePlayer play];
+    
+}
 
+-(IBAction) playMovie9:(id)sender
+{
+    NSURL *fileURL = [NSURL URLWithString:@"/System/Library/Audio/UISounds/Tink.caf"]; // see list below
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((__bridge_retained CFURLRef)fileURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    NSString *videoFile = [[NSBundle mainBundle] pathForResource:@"The_Letter_B" ofType:@"mp4"];
+    
+    //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+    //pathForResource:@"Adding_For_Toddlers" ofType:@"MP4"]];
+    
+    if (videoFile) {
+        NSURL *url = [NSURL fileURLWithPath:videoFile];
+        NSError *error;
+        
+        moviePlayer =  [[MPMoviePlayerController alloc]
+                        initWithContentURL:url];
+        
+        if (!error) {
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self
+                                                     selector:@selector(moviePlayBackDidFinish:)
+                                                         name:MPMoviePlayerPlaybackDidFinishNotification
+                                                       object:moviePlayer];
+            
+            moviePlayer.controlStyle = MPMovieControlStyleDefault;
+            moviePlayer.shouldAutoplay = YES;
+            [self.view addSubview:moviePlayer.view];
+            [moviePlayer setFullscreen:YES animated:YES];
+            
+            [moviePlayer play];
+        }
+    }
+    else {
+        NSError *error;
+        NSLog(@"Error occurred: %@", [error localizedDescription]);
+    }
+    
+    
+    //[moviePlayer play];
+    
+}
 
 - (void) moviePlayBackDidFinish:(NSNotification*)notification {
     MPMoviePlayerController *player = [notification object];

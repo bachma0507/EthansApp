@@ -21,7 +21,7 @@
                                 <rect key="frame" x="22" y="72" width="437" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-Mu-Mf3">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-Mu-Mf3">
                                         <rect key="frame" x="0.0" y="0.0" width="437" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
@@ -172,30 +172,61 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-do-mK3" customClass="ReflectionView">
+                                                <rect key="frame" x="172" y="219" width="93" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letter_Asm.png" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-AM-KS9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG3-bO-8af">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playMovie8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nUs-Nj-sDR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXL-kK-oFl" customClass="ReflectionView">
+                                                <rect key="frame" x="311" y="219" width="93" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letter_Bsm.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5B-hp-rOf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIG-8l-vUG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playMovie9:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Men-vV-g4Z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Ali-8t-aIm"/>
                                             <constraint firstAttribute="width" constant="437" id="IPV-Ia-rJD"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="330" id="KIn-Cj-cIL"/>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="437" id="W2s-h1-gfr"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="437" id="d9m-r6-dtl"/>
+                                            <constraint firstAttribute="height" constant="330" id="KIn-Cj-cIL"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="0WN-pK-wdJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="DBR-Ez-Fwk"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Fqb-3N-oOM"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Fu6-oM-bg4"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Qfq-Vg-dpC"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="TnO-RG-fuB"/>
-                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="UWR-5T-StV"/>
-                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="XEv-hn-t8J"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="XMk-dY-F3q"/>
-                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="cTb-dh-pqt"/>
-                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="jto-8W-lRq"/>
-                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="seQ-bV-kGJ"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="DGf-0S-YWn"/>
+                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="H0C-hg-c8S"/>
+                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="JR3-zf-oSC"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="w5Z-8X-xab"/>
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTB-tW-RiQ">
@@ -296,6 +327,8 @@
                         <outlet property="reflectionView5" destination="fE1-hn-iqH" id="ksF-cr-Qer"/>
                         <outlet property="reflectionView6" destination="HBE-yS-YnC" id="SbZ-zz-6A2"/>
                         <outlet property="reflectionView7" destination="agx-OL-g15" id="rjJ-Do-shg"/>
+                        <outlet property="reflectionView8" destination="WuT-do-mK3" id="Pbu-Qt-qqc"/>
+                        <outlet property="reflectionView9" destination="UXL-kK-oFl" id="8o5-7J-fFZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -309,6 +342,8 @@
         <image name="countto20sm.png" width="93" height="52"/>
         <image name="fruitsn.png" width="93" height="52"/>
         <image name="learninganimalssm.png" width="93" height="52"/>
+        <image name="letter_Asm.png" width="93" height="52"/>
+        <image name="letter_Bsm.png" width="93" height="52"/>
         <image name="mathsm.png" width="93" height="52"/>
         <image name="whatsthatsm.png" width="93" height="52"/>
     </resources>

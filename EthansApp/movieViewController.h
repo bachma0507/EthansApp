@@ -22,6 +22,8 @@
 @property (nonatomic, retain) IBOutlet ReflectionView *reflectionView5;
 @property (nonatomic, retain) IBOutlet ReflectionView *reflectionView6;
 @property (nonatomic, retain) IBOutlet ReflectionView *reflectionView7;
+@property (nonatomic, retain) IBOutlet ReflectionView *reflectionView8;
+@property (nonatomic, retain) IBOutlet ReflectionView *reflectionView9;
 -(IBAction) playMovie:(id)sender;
 -(IBAction) playMovie2:(id)sender;
 -(IBAction) playMovie3:(id)sender;
@@ -29,5 +31,7 @@
 -(IBAction) playMovie5:(id)sender;
 -(IBAction) playMovie6:(id)sender;
 -(IBAction) playMovie7:(id)sender;
+-(IBAction) playMovie8:(id)sender;
+-(IBAction) playMovie9:(id)sender;
 
 @end
