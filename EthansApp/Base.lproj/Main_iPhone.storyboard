@@ -21,8 +21,8 @@
                                 <rect key="frame" x="22" y="72" width="437" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-Mu-Mf3">
-                                        <rect key="frame" x="0.0" y="0.0" width="437" height="285"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-Mu-Mf3">
+                                        <rect key="frame" x="0.0" y="0.0" width="437" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fE1-hn-iqH" customClass="ReflectionView">
@@ -175,15 +175,26 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Ali-8t-aIm"/>
                                             <constraint firstAttribute="width" constant="437" id="IPV-Ia-rJD"/>
-                                            <constraint firstAttribute="height" constant="285" id="Nj0-Gx-NUT"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="330" id="KIn-Cj-cIL"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="437" id="W2s-h1-gfr"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="437" id="d9m-r6-dtl"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="0WN-pK-wdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="DBR-Ez-Fwk"/>
                                     <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Fqb-3N-oOM"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Fu6-oM-bg4"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="top" secondItem="4AE-q1-eDO" secondAttribute="top" id="Qfq-Vg-dpC"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="TnO-RG-fuB"/>
+                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="UWR-5T-StV"/>
                                     <constraint firstAttribute="trailing" secondItem="UiF-Mu-Mf3" secondAttribute="trailing" id="XEv-hn-t8J"/>
                                     <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="XMk-dY-F3q"/>
+                                    <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="cTb-dh-pqt"/>
+                                    <constraint firstItem="UiF-Mu-Mf3" firstAttribute="leading" secondItem="4AE-q1-eDO" secondAttribute="leading" id="jto-8W-lRq"/>
                                     <constraint firstAttribute="bottom" secondItem="UiF-Mu-Mf3" secondAttribute="bottom" id="seQ-bV-kGJ"/>
                                 </constraints>
                             </scrollView>
